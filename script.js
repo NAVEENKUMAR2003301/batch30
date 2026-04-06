@@ -407,26 +407,409 @@ console.log("num6 : ", num6); // 1  2 1  // num6 = 1
 
 
 
-
-    
-
-
-
-
-
-
-
-
-
-
+console.clear()
 
 // assignment operator
 
+
+let number1 = 10
+
+let additionalVal = 110
+
+    // number1 = number1 + additionalVal
+
+    number1 += additionalVal
+    number1 -= additionalVal
+    number1 *= additionalVal
+    number1 /= additionalVal
+    number1 %= additionalVal
+    // number1 **= additionalVal
+   
+    
+    console.log(number1);
+
+
+
+  console.clear()
+
 // comparision or relational operator
+
+
+// syntex 
+
+
+
+// meaning             symbol            example                result
+
+// lessThen               <                5 < 8                 true
+
+// greaterThen            >                5 > 9                 false
+
+// lessThenEq             <=               6 <= 5                false
+
+// greaterThenEq          >=               7 >= 8                false
+
+// loosyTypeEq            ==               6 == "6"              true
+
+// loosyNotEq             !=               6 !="6"               false
+
+// strictlyTypeEq         ===              5 === "5"             false
+
+// strictlyNotEq          !==              5 !== "6"             true
+
+
+
+
+// 1
+console.log(10 < 15);   // true
+
+// 2
+console.log(20 > 25);   // false 
+
+// 3
+console.log(12 <= 12);  // true
+
+// 4
+console.log(9 >= 11);   // false 
+
+// 5
+console.log(7 == "7");  // true 
+
+// 6
+console.log(8 != "8");  // false 
+
+// 7
+console.log(10 === "10");  // false 
+
+// 8
+console.log(15 !== "15"); // true 
+
+// 9
+let a3 = 5;
+let b33 = "5";
+console.log(a3 == b33); // true 
+
+// 10
+let x = 18;
+let y = 18;
+console.log(x === y);  // true 
+
+console.clear();
+
+
 
 // logical operator
 
+
+// AND      - &&
+
+// true && true && true = true
+// true && false && true = false
+
+// OR       - ||
+
+// true || true || true = true 
+// false || false || true = true
+// false || false || false = false
+
+// NOT      - !
+
+// !(true) = false 
+// !(false) = true
+
+
+// example 
+
+
+// 1
+console.log(5 > 2 && 10 > 3);   // true 
+
+//  true && true = true
+
+// 2
+console.log(8 < 4 || 6 > 2); // true 
+
+//   false || true   = true 
+
+// 3
+console.log(3 > 7 || 1 > 9); // false 
+
+//    false  || false = false
+
+// 4
+console.log(!(10 > 5));  // false
+
+// !(true)  = false
+
+// 5
+console.log(!(2 < 1 && 4 > 2)); // true
+
+// !(false && true) = !(false) = true .
+
+
 // ternary operator
+
+
+// syntex 
+
+// condition ? statement : statement ; 
+
+
+5==="5" ? console.log("hello") : console.log("error hello");
+
+
+
+
+// concatination  - (+)
+
+let str1 = "hello"
+
+let str2 = "world"
+
+let str3 = "javascript"
+
+let str4 = 100
+
+
+
+
+
+// template string
+
+console.log(`${str1} ${str3} ${str2}`);
+
+console.log(str1+" "+str3+" "+str2 + str4 );
+console.clear();
+
+
+// typeConversion 
+
+// implicit type conversion 
+
+
+let str = "1"
+let num11 = 1
+
+console.log(typeof(str + num11));
+
+
+// string 
+
+// string anything is string
+
+
+console.log(("1" + "1"));
+console.log(("1" +  1));
+console.log(("1" +  true));
+console.log(("1" +  undefined));
+console.log(("1" +  null));
+console.log(("1" +  [1,2,3]));
+console.log(("1" + {k:1}));
+
+console.clear();
+
+// number 
+
+console.log(typeof(1 + "1"));
+console.log(typeof(1 + 1));
+console.log(typeof(1 + true));
+console.log(typeof(1 + undefined));
+console.log(typeof(1 + null));
+console.log(typeof(1 + [1,2,3]));
+console.log(typeof(1 + {j:6}));
+
+
+// boolean 
+
+console.clear();
+
+console.log(typeof(true + "1"));
+console.log(typeof(true + 1));
+console.log(typeof(true + true));
+console.log(typeof(true + undefined));
+console.log(typeof(true + null));
+console.log(typeof(true + [1,2,3]));
+console.log(typeof(true + {l:4}));
+
+
+
+
+console.clear();
+
+
+// explicit type conversion 
+
+// constractor 
+
+// number constractor - Number()
+
+
+console.log(10 + Number("10"));
+console.log(Number());
+console.log(Number(" "));
+console.log(Number("1234"));
+console.log(Number("abc"));
+console.log(Number(true));
+console.log(Number(undefined));
+console.log(Number(null));
+console.log(Number([123,56,78]));
+console.log(Number({k:9}));
+
+
+
+// boolean constractore - Boolean()
+
+
+console.log(Boolean());
+console.log(Boolean(" "));
+console.log(Boolean("1234"));
+console.log(Boolean("-23"));
+console.log(Boolean("0"));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean("abc"));
+console.log(Boolean([7,8]));
+console.log(Boolean({k:89}));
+
+
+console.clear();
+
+
+// flow control statement 
+
+
+// conditional statement 
+
+// if statement 
+
+// if(conditon){// statement}
+
+// condition true = {allow}
+
+// example 
+
+
+if(5==50){
+  console.log("hi");
+  
+}
+
+//  if else statement 
+
+// if (condition){//statement}else{//statement}
+
+// condition true = if inside allow , false = else inside allow
+
+// example 
+
+if(9==6){
+  console.log("condition true");
+  
+}else{ 
+  console.log("condition false");
+  
+}
+
+
+// else if statement 
+
+
+// let hour = prompt("enter the time use 24h format")
+
+// if(hour >= 1 && hour <= 12){
+//    alert("good morning");
+   
+// }else if(hour >= 13 && hour <= 16){
+//   alert("good afternoon");
+  
+// }else if(hour >= 17 && hour <= 19){
+//   alert("good evening");
+  
+// }else{
+//   alert("good night");
+  
+// }
+
+
+// nested if statement
+
+
+// let age =prompt("enter your age")
+// let height =prompt("enter your height cm")
+// let weight =prompt("enter your weight kg")
+
+// if(age >= 18){
+
+//   if(height >= 165){
+
+//     if(weight >= 65){
+//        alert("congradulation you are selected⭐⭐⭐");
+       
+//     }else{
+//       alert("sorry you not eligible bcz your weight"+" "+weight+"kg");
+      
+//     }
+
+//   }else{
+//     alert("sorry you not eligible bcz your height"+" "+height+cm);
+    
+//   }
+
+// }else{
+//   alert("sorry you not eligible bcz your age"+" "+age+"old");
+  
+// }
+
+
+// switch statement
+
+
+// switch(condition ){
+//   case "value" : "statement"; break;
+//   case "value" : "statement"; break;
+//   case "value" : "statement"; break;
+//   case "value" : "statement"; break;
+//   case "value" : "statement"; break;
+//   case "value" : "statement"; break;
+// }
+
+
+
+
+let trafficLight = "vilot"
+
+switch(trafficLight){
+  case "red" : console.log("vechile stop");
+   ; break;
+  case "yellow" : console.log("vechile start");
+   ; break;
+  case "green" : console.log("vechile go");
+   ; break;
+   default : console.log("safe ride");
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+// looping statement
+
+
+
+
+
+
+
+
 
 
 
