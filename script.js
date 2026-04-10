@@ -1296,6 +1296,331 @@ function a(a){
 a(10)(20)(30)
 
 
+console.clear();
+
+
+// Data Stracture
+
+// ECMA SCRIPT - ES6 edition
+
+// Spread operator
+
+// two array or object we can merge , clone
+
+// Array spread operator - [...]
+
+
+let arr1 = [1,2,3,4]
+let arr2 = [5,6,7,8]
+
+
+let totalArr = [...arr1,...arr2]
+
+console.log(totalArr);
+
+// object spread operator - {...}
+
+
+let obj1 = {
+  name1 : "a",
+  role  : "trainee",
+  salary: 100000
+}
+
+let obj2 = {
+  name11 : "b",
+  role1  : "developer",
+  salary1: 400000
+}
+
+
+
+let totalObj = {...obj1,...obj2}
+
+console.log(totalObj);
+
+
+
+
+
+
+
+
+
+
+
+
+// rest operator
+
+// we can save multiple argument in single parameter inside
+
+// function - (...)
+
+
+function rest(a,b,...c){
+
+  console.log(a+b);
+
+  console.log(c);
+  
+
+  
+  
+
+}
+
+rest(1,2,3,4,5,6)
+
+
+
+
+
+
+// Destracture 
+
+
+// Array Destracture
+
+
+let arrDe = [1,2,3,4]
+
+let f1 = arrDe[0]
+let f2 = arrDe[1]
+let f3 = arrDe[2]
+let f4 = arrDe[3]
+
+
+console.log(f1,f2,f3,f4,f4,f3,f2,f1);
+
+
+// deStrac
+
+let [g1,g2,g3,g4] = arrDe
+
+g1 = 6
+
+console.log(g1,g2,g3,g4,g4,g3,g2,g1);
+
+
+
+// object Destracture 
+
+
+let objDe = {
+  name1 : "mahath",
+  role  : "software Engineer",
+  salary: 3000000
+}
+
+
+let name2 = objDe.name1
+let role2 = objDe.role
+let salary2 = objDe.salary
+
+
+console.log(name2);
+console.log(role2);
+console.log(salary2);
+
+
+// obj Destracture 
+
+
+let {name1,role,salary} = objDe
+
+console.log(name1,role,salary);
+
+// nested arr
+
+let nestedArr = [1,2,[3,4,[5,6,[7]]]]
+
+let h1 = nestedArr[0]
+let h2 = nestedArr[1]
+let h3 = nestedArr[2][0]
+let h4 = nestedArr[2][1]
+let h5 = nestedArr[2][2][0]
+let h6 = nestedArr[2][2][1]
+let h7 = nestedArr[2][2][2][0]
+
+
+console.log(h1,h2,h3,h4,h5,h6,h7);
+
+
+let [j1,j2,[j3,j4,[j5,j6,[j7]]]] = nestedArr
+
+console.log(j1,j2,j3,j4,j5,j6,j7);
+
+
+
+
+
+function toy(toy1,toy2,...toyAll){
+
+  console.log(toy1);
+  console.log(toy2);
+  console.log(toyAll);
+
+
+  // deStracture 
+
+  let [t1,t2,t3,t4] = toyAll
+
+  console.log(t1);
+  
+  
+  
+
+}
+
+toy("teddy","elephant","lion","tiger","rc car","dron")
+
+
+
+console.clear();
+
+// Array advance Concept
+
+let arrayExample = [1,2,3,4,"hello",true,undefined,null,[1,2],{k:3}]
+
+console.log(arrayExample);
+
+console.log(arrayExample[0]);
+console.log(arrayExample[arrayExample.length-1]);
+
+
+// homogenous 
+
+// hetrogenous
+
+// flexible 
+
+// adding = you can add multiple value
+// remove = you can remove one value
+
+// Array manipulation method 
+
+// push - you can add value in array last.
+// pop  - you can remove value in array last
+// shift - you can remove value in array first.
+// unshift - you can add value in array first.
+
+let arrNor = [1,2,3,4]
+
+arrNor.push(5,6,7,8)
+arrNor.pop()
+arrNor.shift()
+arrNor.unshift(0,1)
+
+console.log(arrNor);
+
+
+// splice() - (startingIndex,DeleteCount,AddingValue)
+
+
+let arr = [1,2,3,14,15,16,7,8]
+
+arr.splice(3,3,4,5,6)
+
+
+console.log(arr);
+
+
+
+
+
+// Array merge method 
+
+// concat(),
+
+let arr4 = [1,2,3,4]
+let arr5 = [5,6,7,8]
+
+let totalArr1 = arr4.concat(arr5)
+
+console.log(totalArr1);
+
+
+
+//  slice(), StartingIndex, EndingIndex + 1
+
+let arr6 = [1,2,3,14,15,16,7,8]
+
+let sliceVal = arr6.slice(3,6)
+
+console.log(sliceVal);
+
+
+//  flat(),
+
+let nest = [1,2,[3,4,[5]]]
+
+let flatVal = nest.flat(Infinity)
+
+console.log(flatVal);
+
+
+
+//  fill(),
+
+let arrA = [1,2,3,4]
+
+arrA.fill("hello",2,3) // value , SI , EI + 1 
+
+console.log(arrA);
+
+
+
+//  includes(),
+
+let arrB = [1,5,88,9,53]
+
+let IncludesVal = arrB.includes(88)
+
+console.log(IncludesVal);
+
+
+//  indexOf(),
+
+let arrC = [1,2,3,4,3,2,1,2,3,4,3,2,1]
+
+let IndexVal = arrC.indexOf(1) // value, FromIndex
+
+console.log(IndexVal);
+
+
+//  lastIndexOf(),
+
+let lastIndexOfVal = arrC.lastIndexOf(1,11)
+
+console.log(lastIndexOfVal);
+
+
+
+//  sort(),
+
+let arrD = [1000,4,3,7,53436,2,9,0]
+
+// 5.3436 < 7 = true
+
+let sortVal = arrD.sort()
+
+console.log(sortVal);
+
+
+//  reverse()
+
+let arrF = [1,20,3,4]
+
+console.log(arrF.reverse());
+
+
+
+
+
+
+
+
+
 
 
 
