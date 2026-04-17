@@ -2242,16 +2242,115 @@
   
 
 
-  
-  
-  
-
-
-
-// traversing 
-
 // manipulating
 
 
 
+// input   -   value
 
+
+let input = document.querySelector("input")
+
+
+input.value  = "hello"
+
+
+// All tag - innerText, textContent , innerHTML
+
+let p = document.querySelector("p")
+
+p.innerText = "welcome"
+
+
+let z1 = document.querySelector(".z1")
+
+z1.textContent = "good morning"
+
+
+let z2 = document.querySelector("#z2")
+
+z2.innerHTML = `<h1>hello</h1><h2>hi</h2>`
+
+
+
+
+// EventHandler    &  EventListner
+
+
+// EventHandler
+
+let h3 = document.querySelector("h3")
+let h5 = document.querySelector("h5")
+
+
+function signInUpdateName(a){
+
+  h3.innerText = "Good morning " + a
+
+}
+
+
+
+
+
+// EventListner 
+
+
+let h4 = document.querySelector("h4")
+
+let btn = document.querySelector(".btn")
+
+
+
+
+btn.addEventListener("click",()=>{
+  h4.innerText = "thanks for visit..."
+})
+
+btn.addEventListener("click",()=>{
+  h5.innerText="hello"
+})
+
+
+
+// style 
+
+let a = document.querySelector(".a")
+
+
+
+a.style.fontSize = "20px"
+
+
+
+// add attribute
+
+let b = document.querySelector(".b")
+
+
+b.setAttribute("id","first1")
+
+
+
+// create tags
+
+
+let li = document.createElement("li")
+
+li.innerText = "hi"
+
+let ol = document.querySelector("ol")
+
+ol.append(li)
+
+
+
+// eval
+
+
+let c = document.querySelector(".c")
+
+c.innerHTML = eval(10*10)
+
+
+// remove
